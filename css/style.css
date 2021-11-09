@@ -3,4 +3,32 @@
     color: white;
     text-transform: uppercase;
     height: 50px;
+    line-height: 50px;
+}
+
+.green {
+    background-color: aquamarine;
+}
+
+.turquoise {
+    background-color: turquoise;
+    height: 150px;
+    margin-top: 2em;
+    border-radius: 50%;
+}
+
+.wheat {
+    background-color:wheat;
+    height: 50px;
+}
+
+ h1, h3 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 2em;
 }
