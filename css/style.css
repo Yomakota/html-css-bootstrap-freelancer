@@ -68,8 +68,12 @@ section {
 
 /* ABOUT */
 
-.yellow {
-    background-color: yellow;
+.white-text {
+    color: white;
+}
+
+.magenta {
+    background-color: rgb(230, 40, 135);
     height: 100px;
     margin-top: 1em;
 }
@@ -78,4 +82,35 @@ section {
     background-color: orange;
     height: 50px;
     margin-top: 1em;
+}
+
+/* CONTACTS */
+
+.pink {
+    height: 30px;
+    background-color: plum;
+}
+
+.message {
+    height: 100px;
+}
+
+/* FOOTER */
+
+/* FOOTER-TOP */
+
+.footer-top {
+    background-color: lightblue;
+}
+
+.purple {
+    background-color: rgb(153, 0, 255);
+    height: 50px;
+}
+
+/* FOOTER-BOTTOM */
+
+.khaki {
+    height: 15px;
+    background-color: khaki;
 }
