@@ -1,3 +1,22 @@
+/* COMMONS */
+
+h1, h2, h3 {
+   color: white;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+h2 {
+   color: black;
+}
+
+h3 {
+   font-size: 1.2em;
+   margin-bottom: 2em;
+}
+
+/* HEADER */
+
 .container-fluid {
     background-color: rgb(36, 83, 136);
     color: white;
@@ -5,6 +24,8 @@
     height: 50px;
     line-height: 50px;
 }
+
+/* JUMBO */
 
 .green {
     background-color: aquamarine;
@@ -22,13 +43,23 @@
     height: 50px;
 }
 
- h1, h3 {
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
+/* MAIN */
+
+.portfolio {
+    padding: 2em;
 }
 
-h3 {
-    font-size: 1.2em;
-    margin-bottom: 2em;
+.black {
+    background-color: black;
+    height: 20px;
+    margin-bottom: 1em;
+}
+
+.red {
+    background-color: red;
+    height: 200px;
+}
+
+.gap {
+    gap:1em;
 }
