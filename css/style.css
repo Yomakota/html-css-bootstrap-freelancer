@@ -19,6 +19,11 @@ section {
     padding:2em;
 }
 
+.hamburger {
+    display: none;
+}
+
+
 /* HEADER */
 
 .container-fluid {
@@ -113,4 +118,18 @@ section {
 .khaki {
     height: 15px;
     background-color: khaki;
+} 
+
+/* MEDIA-QUERY */
+
+@media screen and (max-width: 768px) {
+   
+    .hamburger {
+        display: block;
+    } 
+
+    .none {
+        display: none;
+    }
+
 }
