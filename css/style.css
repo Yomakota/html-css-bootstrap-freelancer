@@ -1,0 +1,6 @@
+.container-fluid {
+    background-color: rgb(36, 83, 136);
+    color: white;
+    text-transform: uppercase;
+    height: 50px;
+}
