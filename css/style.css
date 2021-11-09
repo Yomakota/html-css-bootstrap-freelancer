@@ -43,7 +43,6 @@ section {
 .turquoise {
     background-color: turquoise;
     height: 150px;
-    margin-top: 2em;
     border-radius: 50%;
 }
 
@@ -59,7 +58,7 @@ section {
 .black {
     background-color: black;
     height: 20px;
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
 }
 
 .red {
@@ -80,13 +79,11 @@ section {
 .magenta {
     background-color: rgb(230, 40, 135);
     height: 100px;
-    margin-top: 1em;
 }
 
 .orange {
     background-color: orange;
     height: 50px;
-    margin-top: 1em;
 }
 
 /* CONTACTS */
