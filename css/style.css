@@ -1,16 +1,49 @@
 /* COMMONS */
+h1, h2, h3 {
+    text-transform: uppercase;
+}
 
+a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
 
 /* HEADER */
 
 .header {
-    background-color: turquoise;
+    background-color: #2C3E50;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
 }
 
 /* JUMBOTRON */
 
-.jumbo {
+.bg-green {
     background-color: #1ABC9C;
+}
+
+.jumbo img {
+    width: 20%;
+}
+
+.text-white {
+    color: white;
+}
+
+.dash {
+    border-top: 4px solid black;
+}
+
+.dash-white {
+    border-top: 4px solid white;
+}
+
+.star {
+    width: 5%;
 }
 
 @media screen and (max-width: 576px) {
@@ -32,4 +65,6 @@
     width: 100%;
 }
 
-
+.border-none {
+    border: none;
+}
