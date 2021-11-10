@@ -68,3 +68,19 @@ a {
 .border-none {
     border: none;
 }
+
+.h-10 {
+    height: 5px;
+}
+
+.margin {
+    margin-bottom: 0;
+}
+
+label:hover {
+    margin-bottom: 2rem;
+}
+
+.footer.top {
+    background-color: #3A546D;
+}
