@@ -1,15 +1,43 @@
 /* COMMONS */
+html {
+    font-size: 100%;
+}
+
 h1, h2, h3 {
     text-transform: uppercase;
 }
 
 a {
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
+  text-decoration: none;
+  color: white;
+}
+a:hover,
+a:active,
+a:focus {
+  color: #1ABC9C;
 }
 
 /* HEADER */
+header a {
+    text-transform: uppercase;
+}
+
+header button {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+}
+
+header button i {
+    color: white;
+    border: 1px solid white;
+    padding: .4em;
+}
+
+header button:hover i {
+    background-color: white;
+    color: black;
+}
 
 .header {
     background-color: #2C3E50;
@@ -19,7 +47,6 @@ a {
     z-index: 1;
     width: 100%;
 }
-
 /* JUMBOTRON */
 
 .bg-green {
@@ -42,51 +69,106 @@ a {
     border-top: 4px solid white;
 }
 
-.star {
-    width: 5%;
-}
-
-@media screen and (max-width: 576px) {
-    .header h1 {
+@media screen and (max-width: 768px) {
+    .header h3 {
         font-size: 1em;
+    }
+
+    .header .list-inline-item {
+        font-size: .8em;
     }
 }
 
+@media screen and (max-width: 576px) {
+    .header h3 {
+        font-size: 1em;
+    }
+}
 /* MAIN */
 
 /* PORTFOLIO */
-
 .portfolio-image {
-    width:100%;
-    height: 300px;
+    background-color: #1ABC9C;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .portfolio-image img {
     width: 100%;
 }
 
-.border-none {
+.portfolio-image:hover img {
+    width: 100%;
+    display: none;
+}
+
+.portfolio-image:hover i {
+    display: block;
+}
+
+.add i {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    color: white;
+    font-size: 2em;
+}
+
+/* ABOUT */
+
+.about .btn-outline-download {
+    color: white;
+    border-color: white;
+    text-transform:none;
+}
+
+.about .btn-outline-download:hover {
+    background-color: white;
+    color: black;
+}
+
+/* CONTACT */
+
+form .border-none {
     border: none;
 }
 
-.h-10 {
-    height: 5px;
+form .name:focus-within label {
+    font-size: .5em;
 }
 
-.margin {
-    margin-bottom: 0;
+form .email:focus-within label {
+    font-size: .5em;
 }
 
-label:hover {
-    margin-bottom: 2rem;
+form .phone:focus-within label {
+    font-size: .5em;
 }
+
+form .message:focus-within label {
+    font-size: .5em;
+}
+
+form .btn.btn-lightgreen {
+    background-color: #1ABC9C;
+    color: white;
+}
+
+form .btn.btn-lightgreen:hover {
+    background-color: green;
+}
+ 
+/* FOOTER */
 
 .footer.top {
     background-color: #3A546D;
     color: white;
 }
 
-.fab {
+footer .fab {
     width:40px;
     height:40px;
     border-radius: 50%;
@@ -94,13 +176,16 @@ label:hover {
     padding-top: .7em;
 }
 
-footer h3 {
-    font-size: 1.2em;
+footer .fab.fa-facebook-f:hover, 
+footer .fab.fa-google-plus-g:hover, 
+footer .fab.fa-twitter:hover, 
+footer .fab.fa-linkedin-in:hover {
+    background-color: white;
+    color: black;
 }
 
-.px-6 {
-    padding-right: 10rem !important;
-    padding-left: 10rem !important;
+footer h3 {
+    font-size: 1.2em;
 }
 
 .freelance a {

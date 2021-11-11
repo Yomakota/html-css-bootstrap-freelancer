@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- header -->
-    <header class="header text-white pt-3 pb-3">
+    <header class="header text-white pt-3 pb-3 ">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-6">
@@ -22,9 +22,9 @@
                         start bootstrap
                     </h3>
                 </div>
-                <div class="hamburger col-6 text-end d-sm-none">
+                <button class="hamburger col-6 text-end d-sm-none">
                     <i class="fas fa-bars"></i>
-                </div>
+                </button>
                 <div class="col-6 text-end d-none d-sm-block">
                     <ul class="menu-header list-inline mb-0">
                         <li class="list-inline-item"><a href=""> portfolio</a></li>
@@ -72,35 +72,53 @@
                             <div class="col-1 dash"></div>
                         </div>
                     </div>
-                    <!-- dash -->
+                    
                     <div class="col-12 col-sm-6 col-md-4 mb-3">
                         <div class="portfolio-image">
                             <img src="img/cabin.png" alt="">
+                            <div class="add">
+                                <i class="fas fa-plus"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 mb-3">
                         <div class="portfolio-image">
                             <img src="img/cake.png" alt="">
+                            <div class="add">
+                                <i class="fas fa-plus"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 mb-3">
                         <div class="portfolio-image">
                             <img src="img/circus.png" alt="">
+                            <div class="add">
+                                <i class="fas fa-plus"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 mb-3">
                         <div class="portfolio-image">
                             <img src="img/game.png" alt="">
+                            <div class="add">
+                                <i class="fas fa-plus"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 mb-3">
                         <div class="portfolio-image">
                             <img src="img/safe.png" alt="">
+                            <div class="add">
+                                <i class="fas fa-plus"></i>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 mb-3">
                         <div class="portfolio-image">
                             <img src="img/submarine.png" alt="">
+                            <div class="add">
+                                <i class="fas fa-plus"></i>
+                            </div>
                         </div>
                     </div>
                     
@@ -135,7 +153,10 @@
                         </div>
                     </div>
                     <div class="col-12 text-center">
-                        <button>button</button>
+                        <a class="btn btn-outline-download">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </a>
                     </div>
                 </div>
             </div>
@@ -146,8 +167,8 @@
         <section class="contact">
             <div class="container pt-5 pb-5">
                 <div class="row justify-content-center">
-                    <div class="col-8">
-                        <h2 class="text-center">
+                    <div class="col-12 text-center">
+                        <h2>
                             contact
                         </h2>
                         <div class="row justify-content-center align-items-center my-3">
@@ -155,21 +176,29 @@
                             <div class="col-1 star"><i class="fas fa-star"></i></div>
                             <div class="col-1 dash"></div>
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label margin">Name</label>
-                            <input type="email" class="form-control h-10 border-none border-bottom" id="exampleFormControlInput1">
-                            <label for="exampleFormControlInput1" class="form-label margin pt-2">Email address</label>
-                            <input type="email" class="form-control h-10 border-none border-bottom" id="exampleFormControlInput1">
-                            <label for="exampleFormControlInput1" class="form-label margin pt-2">Phone Number</label>
-                            <input type="email" class="form-control h-10 border-none border-bottom" id="exampleFormControlInput1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                            <textarea class="form-control border-none border-bottom" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                    </div>
+                    </div>    
                     <div class="col-8">
-                        <button>button</button>
+                        <form action="" class="contact-form">
+                            <div class="mb-3">
+                                <div class="name">
+                                    <label for="exampleFormControlInput1" class="form-label prova">Name</label>
+                                    <input type="name" class="form-control border-none border-bottom" id="exampleFormControlInput1">
+                                </div>
+                                <div class="email">
+                                    <label for="exampleFormControlInput1" class="form-label pt-2">Email address</label>
+                                    <input type="email" class="form-control border-none border-bottom" id="exampleFormControlInput1">
+                                </div>
+                                <div class="phone">
+                                    <label for="exampleFormControlInput1" class="form-label pt-2">Phone Number</label>
+                                    <input type="phone-number" class="form-control border-none border-bottom" id="exampleFormControlInput1">
+                                </div>
+                            </div>
+                            <div class="mb-3 message">
+                                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                                <textarea class="form-control border-none border-bottom" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-lightgreen">Send</button>
+                        </form>
                     </div>
                 </div>
             </div>
